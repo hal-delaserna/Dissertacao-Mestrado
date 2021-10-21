@@ -1,0 +1,164 @@
+---
+output: slidy_presentation
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## 
+<br>
+<br>
+<center><div><h1> Volatilidade dos Royalties da Mineração: análise do desempenho econômico dos municípios mineradores brasileiros frente ao desafio da volatilidade da renda mineral </h1> <br><br></div></center>
+
+<font size="4">
+<div>Defesa pública de mestrado em Economia.<br><br></div>
+<div>autor: <b>Humberto Almeida Serna</b></div>
+<div>orientador: <b>Sebastião Neto Ribeiro Guedes</b></div>
+<center><div><br><br>UNESP<br></div>
+<div>Araraquara-SP. Janeiro de 2019</div></center>
+</font>
+
+## Maldição dos Recursos Naturais (MRN)
+
+<br>  
+
+* Correlação entre especialização em Recursos Naturais (RN) e baixo crescimento: sugere causalidade
+
+
+<table border=0><tr><td width = "250" align = "center">
+<font size="4" color="green"><b>Crescimento médio do <i>PIB per capita</i> (1975-2005) e participação de produtos primários nas exportações (2005)</b></font>
+</td><td width = "850">
+<image src="./ResourceCurse5.png" height = "85%" width = "75%" align = "left">
+</td></tr></table>
+
+## Maldição dos Recursos Naturais (MRN)
+
+<br>
+<br>
+
+* Mudando a forma de medir abundância de recursos naturais (RN), também muda a conclusão:
+<br><br>
+    + Sachs & Warner (1995): <b> usaram a intensidade das exportações de RN no PIB, $X_{(RN)}/Y$ </b>
+    
+          - concluem que países intensivos em exportações de RN, <b>crescem menos</b>
+    <br>      
+    + Brunnschweiler & Bulte (2008), Wright (2001): <b> usaram a dotação interna de RN *per capita* </i> </b>"[...] valuations of the net present value of benefits over a time horizon of 20-25 years[...]" (BRUNNSCHWEILER & BULTE, 2008, p.10) </i>
+    
+          - concluem que países com elevado capital natural *per capita*, <b>crescem mais</b>
+
+
+## MRN: Os Canais Institucionais
+     
+<br>     
+
+* Endógenos à presença de RN: 
+    - Territórios ricos em RN tendem a ambiente institucional piorado, porque foram colônias de exploração no passado (*path dependence*)
+    - Presença de instituições extrativas: "*[...]where the majority of the population faces high risk of expropriation by the government, the ruling elite or other agents[...]*" (ACEMOGLU et al, 2001, p.5);
+    - Comportamento *rent seeking*. 
+
+<br>    
+
+* Exógenos à presença de RN: 
+    - Abundância de RN não determina pior ambiente institucional
+    - Mas se as Instituições forem ruins o país não se desenvolve: permanecerá dependente do setor primário exportador.
+    - Brunschweiler & Bulte (2008)
+      
+     
+## MRN: Os Canais Macroeconômicos 
+
+<br>
+<br>
+
+* Doença Holandesa
+
+    - Apreciação cambial
+     
+    - Hipertrofia do setor de não-comercializáveis
+     
+    - Inflação de não-comercializáveis, amplificando a apreciação real
+     
+    - Desindustrialização Direta: migração de empregos para o setor primário exportador
+
+    - Desindustrialização Indireta: migração de empregos para bens não comercializáveis
+
+
+## MRN: Os Canais Macroeconômicos 
+
+<br>
+<br>
+
+* Volatilidade: nos termos de troca e nas rendas de RN (*Volatility Curse*)
+
+    - Menor acumulação de capital físico (CAVALCANTI et al, 2011; VAN DER PLOEG & PHOELHEKKE, 2010)
+    
+    - Dificulta o planejamento dos gastos governamentais (STIGLITZ, SACHS & HUMPHREYS, 2007; TUER, 2002)
+    
+    - Estímulo ao comportamento fiscal pró-cíclico (STURM, GURTNER & ALEGRE, 2009; FRANKEL, 2010)
+     
+   
+## Volatilidade das commodities e os Superciclos
+
+<br>
+<br>
+
+* Volatilidade
+    - Característica mais bem demarcada nos preços de commodities, (CASHIN & MCDERMOTT, 2002; DEATON & LAROQUE, 1992; DEATON, 1999)
+    
+    - Decorrente da baixa-elasticidade preço (CUDDINGTON & JERRET,2007; SINOTT,2010; ASFAHA,2010)  
+    
+    - "*[...] What commodity prices lack in trend, they make up for in variance [...]*" (DEATON, 1999, p. 27)
+
+
+
+* Superciclos
+
+    - Movimentos conjuntos e prolongados de alta e baixa nos preços das commodities
+    - Suscitados pela demanda (diferentemente dos ciclos de negócios)
+    - Acompanham eventos mundiais de envergadura (ERTEN & OCAMPO, 2013):
+        - Crescimento dos EUA e I Guerra (1894-1932)
+        - II Guerra e reconstrução posterior (1932-1971)
+        - choque do petróleo (1971-1999)
+        - Crescimento Chinês (1999-(?))
+
+
+
+## Capítulo 2: Para os municípios que auferem royalties da mineração, mais volatilidade realmente representa menos crescimento, conforme preconizado pela literatura <i> volatility curse</i>?
+
+<br>
+
+* Método de estimação: painel de dados com efeitos fixos
+
+    - $y_{i,t} = \beta_0 \sigma_{i,t} + \beta_1 investimento_{i,t} + \beta_2 educação + \beta_3 pop\_empregada_{i,t} + \beta_4 IFDM_{i,t} + \nu_{it}$ <br>
+<br>
+ Em que, <br>
+ $y_{i,t}$ é a renda <i>per capita</i><br>
+ $\sigma_{i,t}$ é a volatilidade dos royalties da mineração<br>
+ e $\nu_{it}=\alpha_i+\mu_{it}$ é o resíduo composto do modelo, com o efeito fixo $\alpha_i$ e o resíduo aleatório $\mu_{it}$
+<br>
+
+* Auferir royalties mais voláteis parece não alterar relevantemente o crescimento econômico 
+
+
+
+\
+\
+
+
+## 
+<br>
+<br>
+<br>
+<br>
+<br>
+<center> <h1> Obrigado </h1> </center>
+
+
+
+
+
+
+
+
